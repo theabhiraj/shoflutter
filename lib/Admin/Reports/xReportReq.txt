@@ -1,0 +1,82 @@
+🔥 Reports Module Prompt for Generation
+📌 Purpose:
+The Reports module provides shop owners with detailed financial and operational insights, including sales, expenses, employee performance, and inventory trends. It supports daily, weekly, monthly, and yearly reports with visual analytics.
+
+/Reports/
+│── reports_home.dart            # Main Reports Dashboard
+│── sales_reports.dart           # Sales analysis reports
+│── expenses_reports.dart        # Expense breakdown reports
+│── inventory_reports.dart       # Stock movement & low-stock alerts
+│── employee_performance.dart    # Attendance & performance tracking
+│── financial_summary.dart       # Profit & loss calculations
+│── export_reports.dart          # Download & print reports (PDF/CSV)
+
+
+🔹 1. reports_home.dart (Main Reports Dashboard)
+🔹 Features:
+✅ Quick overview of sales, expenses, inventory, and employee stats
+✅ Visual charts for trends
+✅ Navigation to detailed reports
+
+🔹 UI Components:
+Total Revenue & Expenses Graph
+Top Selling Product & Low Stock Alerts
+Employee Performance Summary
+🔹 2. sales_reports.dart (Sales Reports)
+🔹 Features:
+✅ View daily, weekly, and monthly sales
+✅ Filter by date range, category, or payment method
+✅ Pie chart for payment methods breakdown
+
+🔹 Firebase Action:
+Fetches data from /reports/sales/
+Calculates daily revenue & order count
+🔹 3. expenses_reports.dart (Expense Reports)
+🔹 Features:
+✅ Monthly & yearly expenses summary
+✅ Top spending categories
+✅ Trend graph for expense fluctuations
+
+🔹 Firebase Action:
+Fetches data from /reports/expenses/
+Compares expenses with revenue
+🔹 4. inventory_reports.dart (Inventory Insights)
+🔹 Features:
+✅ Stock movement analysis
+✅ Low stock alerts
+✅ Fast & slow-moving items
+
+🔹 Firebase Action:
+Reads data from /reports/inventory/
+🔹 5. employee_performance.dart (Employee Reports)
+🔹 Features:
+✅ Track attendance & working hours
+✅ Identify best & worst performers
+✅ Monitor late check-ins
+
+🔹 Firebase Action:
+Fetches data from /reports/employees/
+🔹 6. financial_summary.dart (Profit & Loss Report)
+🔹 Features:
+✅ Revenue, expenses, and net profit calculations
+✅ Breakdown of income sources
+✅ Compare profit trends over months
+
+🔹 Firebase Action:
+Fetches data from /reports/financial_summary/
+🔹 7. export_reports.dart (Download & Print Reports)
+🔹 Features:
+✅ Download reports as PDF or CSV
+✅ Print sales, expenses, and inventory reports
+
+🔹 Firebase Action:
+Exports data from all report sections
+✅ Summary
+🔹 Key Features in Reports Module:
+Reports Dashboard – Overview of sales, expenses, and employee data.
+Sales Reports – Analyze revenue trends.
+Expenses Reports – Breakdown of operational costs.
+Inventory Reports – Track stock levels & fast-moving items.
+Employee Performance – Monitor staff efficiency.
+Financial Summary – Calculate profits & losses.
+Export Reports – Download reports in PDF/CSV format.

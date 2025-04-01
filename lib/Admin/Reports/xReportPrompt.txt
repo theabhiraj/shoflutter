@@ -1,0 +1,11 @@
+Hi, we've created files add related code in it, write code for @xReportReq.txt our firebase structure @xReportFire.txt
+
+we have header for all our pages check that also
+
+for reference you can use 
+@Inventory @Billing @Expenses for our previous code 
+@https://docs.flutter.dev/ for flutter version docs 3.27.3 and @https://pub.dev/packages/ for latest packages
+
+make sure every functionality works properly according we mentioned in file @xReportReq.txt  without any error
+
+for our all app files struct /shop_management/shop_1/

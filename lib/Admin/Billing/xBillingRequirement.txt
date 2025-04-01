@@ -1,0 +1,87 @@
+🔥 Billing Module Prompt for Generation
+📌 Purpose:
+The Billing module allows shop owners and employees to generate invoices, apply discounts, accept payments, and print/share bills. It integrates Google Pay and fetches product details from Firebase.
+
+Folder structure:
+lib/admin/Billing/
+│── billing_home.dart        # Main Billing Screen
+│── scan_product.dart        # Scan barcode to add items
+│── cart_view.dart           # View & manage selected items
+│── apply_discount.dart      # Apply percentage or fixed amount discounts
+│── payment_options.dart     # Select payment method (Google Pay, Cash, Card)
+│── generate_invoice.dart    # Generate & print/share the bill
+│── billing_history.dart     # View past transactions
+
+
+🔹 1. billing_home.dart (Main Billing Screen)
+🔹 Features:
+✅ Displays list of items added to the bill
+✅ Search bar to manually add items
+✅ Scan Barcode Button (redirects to scan_product.dart)
+✅ Proceed to Payment Button
+
+🔹 UI Components:
+Cart List: Shows added items (name, quantity, price).
+Total Amount Box: Displays subtotal, discount, and final total.
+Buttons: Apply discount, select payment, generate invoice.
+🔹 2. scan_product.dart (Barcode Scanner)
+🔹 Features:
+✅ Uses camera to scan barcode
+✅ Fetches product details from Firebase
+✅ Auto-adds product to billing cart
+
+🔹 Firebase Action:
+Searches /shop_management/shops/shop_1/inventory/ for barcode match.
+Auto-fills product details if found.
+🔹 3. cart_view.dart (Manage Items in Cart)
+🔹 Features:
+✅ Modify quantity of items
+✅ Remove products from the bill
+✅ Shows real-time price calculation
+
+🔹 Firebase Action:
+Updates Firebase billing cart in real-time.
+🔹 4. apply_discount.dart (Discount Handling)
+🔹 Features:
+✅ Apply discount by percentage (%) or fixed amount
+✅ Validates discount limit
+
+🔹 Firebase Action:
+Adjusts final total in Firebase.
+🔹 5. payment_options.dart (Payment Selection)
+🔹 Features:
+✅ Select payment method:
+
+Google Pay
+Cash
+Card
+✅ Google Pay integration
+✅ Confirm Payment Button
+🔹 Firebase Action:
+Saves selected payment method to Firebase.
+Triggers Google Pay API (if applicable).
+🔹 6. generate_invoice.dart (Bill Generation & Printing)
+🔹 Features:
+✅ Generates PDF invoice
+✅ Option to Print or Share via WhatsApp, Email
+✅ Stores billing history
+
+🔹 Firebase Action:
+Saves order details in Firebase.
+🔹 7. billing_history.dart (Past Transactions)
+🔹 Features:
+✅ View list of past orders
+✅ Filter by date, customer name, or amount
+✅ Clicking an order shows full invoice
+
+🔹 Firebase Action:
+Fetches order data from /shop_management/shops/shop_1/billing/orders/.
+✅ Summary
+🔹 Key Features in Billing Module:
+Billing Home – Main checkout screen.
+Scan Product – Adds items using barcode.
+Cart View – Edit items & quantities.
+Apply Discount – Manage price reductions.
+Payment Options – Select payment method.
+Generate Invoice – Print/share bill.
+Billing History – Track past orders.

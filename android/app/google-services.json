@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "79265170049",
+    "firebase_url": "https://shoflutter-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "shoflutter",
+    "storage_bucket": "shoflutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79265170049:android:cf1ad9f6a34c8582154380",
+        "android_client_info": {
+          "package_name": "com.abhiraj.shoflutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ50wuyvSi0fPCLZHT9Wbuhttb37fJa8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

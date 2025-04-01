@@ -1,0 +1,70 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Shop Management'),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              _buildMenuButton(
+                context,
+                'Categories',
+                Icons.category,
+                Colors.blue,
+                () => Navigator.pushNamed(context, '/categories'),
+              ),
+              const SizedBox(height: 20),
+              _buildMenuButton(
+                context,
+                'Inventory',
+                Icons.inventory,
+                Colors.green,
+                () => Navigator.pushNamed(context, '/inventory'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildMenuButton(BuildContext context, String title, IconData icon,
+      Color color, VoidCallback onPressed) {
+    return SizedBox(
+      width: double.infinity,
+      height: 120,
+      child: Card(
+        elevation: 4,
+        color: color.withOpacity(0.1),
+        child: InkWell(
+          onTap: onPressed,
+          borderRadius: BorderRadius.circular(12),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(icon, size: 48, color: color),
+              const SizedBox(height: 8),
+              Text(
+                title,
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                      color: color,
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

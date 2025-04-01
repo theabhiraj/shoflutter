@@ -1,0 +1,72 @@
+🔥 Employees Module Prompt for Generation
+📌 Purpose:
+The Employees module allows shop owners to manage staff, track attendance, assign roles, and calculate salaries. Employees can clock in/out, view schedules, and access permissions based on their roles.
+
+lib/admin/Employees/
+│── employees_home.dart         # Employees Dashboard
+│── add_employee.dart           # Form to add new employees
+│── employee_list.dart          # View and manage employees
+│── employee_details.dart       # Detailed view of an employee
+│── attendance_tracking.dart    # Track employee check-in/out
+│── salary_management.dart      # Calculate & record employee salaries
+
+🔹 1. employees_home.dart (Main Employee Dashboard)
+🔹 Features:
+✅ Displays total employees count
+✅ Shows employee attendance status (Present/Absent)
+✅ Quick access to add employee, salary management
+
+🔹 UI Components:
+Employee Count Card – Displays total staff.
+Attendance Overview – List of employees and today’s status.
+Quick Action Buttons – Add employee, manage salaries.
+🔹 2. add_employee.dart (Add New Employee)
+🔹 Features:
+✅ Input fields for name, role, phone, salary, joining date
+✅ Saves employee details in Firebase
+
+🔹 Firebase Action:
+Adds new entry under /employees/.
+🔹 3. employee_list.dart (View All Employees)
+🔹 Features:
+✅ Displays all employees with search & filter
+✅ Clicking an employee opens employee_details.dart
+
+🔹 Firebase Action:
+Fetches all employee records from Firebase.
+🔹 4. employee_details.dart (Single Employee View)
+🔹 Features:
+✅ Shows employee details (role, phone, salary, attendance)
+✅ Edit or remove employee
+
+🔹 Firebase Action:
+Reads employee data from Firebase.
+Allows deleting or updating an employee.
+🔹 5. attendance_tracking.dart (Check-in/Check-out)
+🔹 Features:
+✅ Employees can mark check-in & check-out
+✅ Owner can view attendance logs
+
+🔹 Firebase Action:
+Updates /employees/{employee_id}/attendance/.
+🔹 6. salary_management.dart (Salary Calculation & Payment)
+🔹 Features:
+✅ Calculate salary based on attendance
+✅ Mark salary as paid
+✅ Supports Bank Transfer / Cash
+
+🔹 Firebase Action:
+Stores salary records in /salary_records/.
+✅ Summary
+🔹 Key Features in Employees Module:
+Employees Home – Overview of all employees.
+Add Employee – Form for adding new staff.
+Employee List – View and manage employees.
+Employee Details – View/edit individual employee data.
+Attendance Tracking – Check-in/out system.
+Salary Management – Calculate & record salaries.
+
+🔹 Next Steps
+🔹 Start with employees_home.dart.
+🔹 Implement Firebase queries to fetch employee data.
+🔹 Set up attendance & salary UI.

@@ -1,0 +1,74 @@
+🔥 Expenses Module Prompt for Generation
+📌 Purpose:
+The Expenses module helps shop owners track daily, monthly, and yearly expenses such as rent, salaries, stock purchases, and miscellaneous costs. It supports category-wise expense tracking and provides analytics for better financial management.
+
+/Expenses/
+│── expenses_home.dart         # Main Expenses Dashboard
+│── add_expense.dart           # Form to add new expenses
+│── expense_categories.dart    # Manage expense categories
+│── expenses_list.dart         # View all expenses
+│── expense_details.dart       # Detailed view of a single expense
+│── expenses_summary.dart      # Monthly/yearly expense analytics
+
+
+🔹 1. expenses_home.dart (Main Expenses Dashboard)
+🔹 Features:
+✅ Shows total monthly expenses
+✅ Displays expense categories & amounts
+✅ Highlights top spending category
+✅ "Add Expense" button
+
+🔹 UI Components:
+Total Expenses Card: Displays total expenses for the month.
+Category-Wise Breakdown: Pie chart/bar graph for expenses by category.
+List of Recent Expenses: Shows the latest added expenses.
+🔹 2. add_expense.dart (Add New Expense Form)
+🔹 Features:
+✅ Input fields for amount, category, description, payment method
+✅ Dropdown for category selection
+✅ Saves expense in Firebase
+
+🔹 Firebase Action:
+Adds new entry under /expenses/records/.
+Updates monthly summary in /expenses/summary/.
+🔹 3. expense_categories.dart (Manage Expense Categories)
+🔹 Features:
+✅ Add, edit, and delete expense categories
+✅ Predefined categories for rent, salaries, stock, utilities
+
+🔹 Firebase Action:
+Stores categories under /expenses/categories/.
+Ensures expenses are linked to valid categories.
+🔹 4. expenses_list.dart (View All Expenses)
+🔹 Features:
+✅ Displays all recorded expenses
+✅ Filters by date range & category
+✅ Clicking an expense opens expense_details.dart
+
+🔹 Firebase Action:
+Fetches /expenses/records/ for listing expenses.
+🔹 5. expense_details.dart (Single Expense View)
+🔹 Features:
+✅ Shows full details of an expense
+✅ Option to edit or delete an expense
+
+🔹 Firebase Action:
+Reads single expense record from Firebase.
+Allows deleting or updating the entry.
+🔹 6. expenses_summary.dart (Expense Analytics)
+🔹 Features:
+✅ Monthly & yearly total expense calculation
+✅ Graph for category-wise expenses
+✅ Highlights top spending category
+
+🔹 Firebase Action:
+Reads data from /expenses/summary/.
+Displays trends & analytics.
+✅ Summary
+🔹 Key Features in Expenses Module:
+Expenses Home – Overview of total expenses.
+Add Expense – Form for adding new expenses.
+Manage Categories – Edit predefined expense categories.
+Expense List – View all past expenses.
+Expense Details – View/edit individual expenses.
+Expenses Summary – Monthly analytics & insights.

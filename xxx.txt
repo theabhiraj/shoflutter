@@ -1,0 +1,196 @@
+Here’s a detailed breakdown of how each page and component will work in your Admin App:
+
+1️⃣ Dashboard (Admin/Dashboard/)
+The Dashboard provides an overview of shop performance.
+
+📄 dashboard_home.dart
+Displays a summary of the shop’s key metrics.
+Includes widgets like total revenue, stock alerts, and sales trends.
+
+📊 sales_chart.dart
+Shows daily, weekly, and monthly sales data using graphs.
+Uses line/bar charts to visualize revenue trends.
+
+⚠️ stock_alerts.dart
+Lists products with low stock or expired (for medical shops).
+Shows a "Restock Now" button.
+
+🔥 top_selling_items.dart
+Displays the top 5 selling products with images and sales count.
+
+💰 total_revenue.dart
+Shows the total income, expenses, and net profit.
+Uses color-coded cards (green for profit, red for loss).
+
+2️⃣ Inventory Management (Admin/Inventory/)
+Used to manage products, update stock, and scan barcodes.
+
+📄 inventory_home.dart
+Lists all products with name, price, and stock count.
+Has "Add Product" and "Scan Barcode" buttons.
+
+➕ add_product.dart
+Form to add new products with:
+Name, category (dropdown), price, stock quantity.
+Expiry date (for medical shops).
+Image upload.
+
+✏️ edit_product.dart
+Allows editing product details.
+Updates changes in Firebase Realtime Database.
+
+📋 product_list.dart
+Lists all products with sorting options (e.g., price, stock count).
+Allows deleting products.
+
+📦 stock_tracking.dart
+Monitors stock levels.
+Generates alerts for out-of-stock items.
+
+📷 barcode_scanner.dart
+Uses camera to scan barcodes and fetch product details.
+Reduces manual entry for faster stock updates.
+
+
+3️⃣ Billing & Invoicing (Admin/Billing/)
+Handles payments and invoice generation.
+
+📄 billing_home.dart
+Provides options to:
+Create new bill
+View past invoices
+Manage payment methods
+🧾 generate_invoice.dart
+Generates a bill with items, quantity, price, and discounts.
+Saves invoice data to Firebase.
+Exports PDF invoices.
+📜 invoice_list.dart
+Displays past invoices.
+Allows searching invoices by date or customer name.
+💵 apply_discounts.dart
+Applies discounts (percentage or fixed amount).
+Shows final discounted price.
+💳 payment_methods.dart
+Supports Google Pay, Cash, and UPI.
+Logs payment transactions.
+
+4️⃣ Expenses & Profit Tracking (Admin/Expenses/)
+Helps manage shop expenses and profits.
+
+📄 expenses_home.dart
+Summary of total expenses & profit.
+➕ add_expense.dart
+Adds a new expense entry (e.g., rent, salaries, utility bills).
+Stores expense details in Firebase.
+📋 expense_list.dart
+Lists all expenses with dates and amounts.
+Shows total monthly spending.
+📊 profit_calculator.dart
+Calculates net profit:
+Profit = Total Revenue - Expenses
+Displays a profit/loss indicator.
+
+5️⃣ Employee Management (Admin/Employees/)
+Used to manage shop staff and track their performance.
+
+📄 employees_home.dart
+Shows a list of all employees.
+Buttons to add/edit employees.
+➕ add_employee.dart
+Adds a new employee with:
+Name, phone number.
+Role selection (Cashier, Stock Manager).
+Salary details.
+✏️ edit_employee.dart
+Modifies employee details.
+Updates Firebase records.
+👨‍💼 employee_roles.dart
+Defines different employee roles and permissions.
+Allows the admin to set restrictions.
+📊 sales_tracking.dart
+Tracks sales made by each employee.
+Generates employee performance reports.
+
+6️⃣ Customer Management (Optional) (Admin/Customers/)
+Used to track loyal customers.
+
+📄 customers_home.dart
+Shows a list of registered customers.
+Buttons to add new customers.
+➕ add_customer.dart
+Adds customer details (name, phone, address).
+Saves data in Firebase.
+📋 customer_list.dart
+Displays all customers with purchase history.
+🎟 customer_discounts.dart
+Applies loyalty discounts.
+Tracks customer purchase frequency.
+
+7️⃣ Settings (Admin/Settings/)
+Used to configure shop settings.
+
+🛠 shop_settings.dart
+Allows admin to update shop name, address, and contact.
+🎨 theme_settings.dart
+Enables dark/light mode.
+📂 backup_restore.dart
+Backs up shop data to Firebase.
+Allows restoring previous records.
+
+8️⃣ Reports & Analytics (Admin/Reports/)
+Used to generate business reports.
+
+📄 reports_home.dart
+Overview of available reports.
+📅 daily_reports.dart
+Shows daily sales and expenses.
+📆 monthly_reports.dart
+Generates a monthly profit/loss report.
+📊 yearly_reports.dart
+Provides yearly financial insights.
+📤 export_reports.dart
+Exports reports as PDF/Excel files.
+
+🔹 Components (Admin/Components/)
+Contains reusable UI elements.
+
+🖼 common_appbar.dart
+Custom AppBar for all pages.
+📂 common_drawer.dart
+Sidebar navigation for Admin App.
+🔘 custom_button.dart
+Pre-styled buttons for reuse.
+📦 custom_card.dart
+Styled card widgets for dashboard and reports.
+📌 form_input_field.dart
+Custom text fields for forms.
+⏳ loading_spinner.dart
+Shows a loading indicator when fetching data.
+📈 sales_graph.dart
+Displays sales charts using graphs.
+📋 stock_list_item.dart
+Widget for displaying products in stock list.
+💸 transaction_tile.dart
+List item for billing transactions.
+
+Conclusion:
+Admin App will have all necessary features for offline shop management.
+Advanced features like stock tracking, barcode scanning, sales analytics, and profit calculation are included.
+Reusable components make the app modular and scalable.
+
+
+first checkout our codebase @lib 
+after checking create splash screen
+when we open our app then it's take time to display 
+create a a splash screen for it so when app opened it flash screen will display and once loaded all files then move to that.
+By backpress they can't navigate to splash screen
+
+
+
+
+
+
+
+
+
+

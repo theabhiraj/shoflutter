@@ -1,0 +1,34 @@
+{
+  "shop_management": {
+    "shops": {
+      "shop_1": {
+        "billing": {
+          "orders": {
+            "Order_001": {
+              "customer_name": "John Doe",
+              "items": {
+                "Product_ID_123": {
+                  "name": "Paracetamol",
+                  "quantity": 2,
+                  "price": 25.0,
+                  "total_price": 50.0
+                },
+                "Product_ID_456": {
+                  "name": "T-Shirt",
+                  "quantity": 1,
+                  "price": 299.0,
+                  "total_price": 299.0
+                }
+              },
+              "subtotal": 349.0,
+              "discount": 10.0,
+              "final_total": 339.0,
+              "payment_method": "online qr / cash",
+              "timestamp": "2025-02-07T12:00:00"
+            }
+          }
+        }
+      }
+    }
+  }
+}

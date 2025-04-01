@@ -1,0 +1,112 @@
+{
+  "reports": {
+    "financial_summary": {
+      "2024-03": {
+        "total_revenue": "125000",
+        "total_expenses": "75000",
+        "net_profit": "50000",
+        "revenue_by_category": {
+          "electronics": 45000,
+          "clothing": 35000,
+          "accessories": 25000,
+          "others": 20000
+        },
+        "daily_revenue": {
+          "2024-03-01": 4500,
+          "2024-03-02": 5200,
+          "2024-03-03": 4800,
+          "2024-03-04": 5500,
+          "2024-03-05": 4900
+        }
+      }
+    },
+    "inventory": {
+      "low_stock_items": [
+        {
+          "id": "PROD001",
+          "name": "Smartphone X",
+          "current_stock": 5,
+          "min_stock": 10
+        },
+        {
+          "id": "PROD002",
+          "name": "Laptop Pro",
+          "current_stock": 3,
+          "min_stock": 8
+        }
+      ],
+      "stock_movement": {
+        "2024-03": {
+          "in": 150,
+          "out": 120
+        }
+      }
+    },
+    "sales": {
+      "2024-03": {
+        "total_sales": "125000",
+        "total_orders": 85,
+        "top_selling_item": "Smartphone X",
+        "payment_methods": {
+          "cash": 45000,
+          "google_pay": 80000
+        },
+        "daily_sales": {
+          "2024-03-01": {
+            "amount": 4500,
+            "orders": 15
+          },
+          "2024-03-02": {
+            "amount": 5200,
+            "orders": 18
+          }
+        }
+      }
+    },
+    "expenses": {
+      "2024-03": {
+        "total_expenses": "75000",
+        "top_expense_category": "Inventory Restocking",
+        "categories": {
+          "salaries": 35000,
+          "rent": 20000,
+          "utilities": 10000,
+          "others": 10000
+        },
+        "daily_expenses": {
+          "2024-03-01": 2500,
+          "2024-03-02": 3000,
+          "2024-03-03": 2800,
+          "2024-03-04": 2700,
+          "2024-03-05": 2900
+        }
+      }
+    },
+    "employees": {
+      "2024-03": {
+        "best_performer": "Rahul Sharma",
+        "most_absent": "Priya Singh",
+        "performance": {
+          "EMP001": {
+            "name": "Rahul Sharma",
+            "attendance": 95,
+            "sales": 25000,
+            "rating": 4.8
+          },
+          "EMP002": {
+            "name": "Anjali Verma",
+            "attendance": 75,
+            "sales": 18000,
+            "rating": 3.5
+          },
+          "EMP003": {
+            "name": "Priya Singh",
+            "attendance": 85,
+            "sales": 22000,
+            "rating": 4.2
+          }
+        }
+      }
+    }
+  }
+}

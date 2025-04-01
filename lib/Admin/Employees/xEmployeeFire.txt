@@ -1,0 +1,48 @@
+{
+  "shop_management": {
+      "shop_1": {
+        "employees": {
+          "Employee_001": {
+            "name": "Rahul Sharma",
+            "role": "Cashier",
+            "phone": "+91 9876543210",
+            "salary": 15000.0,
+            "joining_date": "2025-01-10",
+            "attendance": {
+              "2025-02-07": {
+                "check_in": "09:00 AM",
+                "check_out": "06:00 PM"
+              }
+            }
+          },
+          "Employee_002": {
+            "name": "Anjali Verma",
+            "role": "Sales Associate",
+            "phone": "+91 9988776655",
+            "salary": 12000.0,
+            "joining_date": "2025-01-15",
+            "attendance": {
+              "2025-02-07": {
+                "check_in": "10:00 AM",
+                "check_out": "07:00 PM"
+              }
+            }
+          }
+        },
+        "salary_records": {
+          "2025-02": {
+            "Employee_001": {
+              "total_days_present": 26,
+              "salary_paid": 15000.0,
+              "payment_method": "Only Cash"
+            },
+            "Employee_002": {
+              "total_days_present": 25,
+              "salary_paid": 12000.0,
+              "payment_method": "Only Cash"
+            }
+          }
+        }
+      }
+  }
+}

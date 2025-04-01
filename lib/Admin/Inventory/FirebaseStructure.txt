@@ -1,0 +1,27 @@
+{
+  "shop_Management": {
+    "shop_1": {
+      "Inventory": {
+        "Product_ID_123": {
+          "name": "Paracetamol",
+          "category": "Medicine",
+          "price": 25.0,
+          "stock": 100,
+          "expiry_date": "2025-12-31",
+          "barcode": "8901234567890",
+          "last_updated": "2025-02-07T12:00:00"
+        },
+        "Product_ID_456": {
+          "name": "T-Shirt",
+          "category": "Clothing",
+          "price": 299.0,
+          "stock": 50,
+          "size": "L",
+          "color": "Blue",
+          "barcode": "7896541230001",
+          "last_updated": "2025-02-07T12:05:00"
+        }
+      }
+    }
+  }
+}

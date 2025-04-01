@@ -1,0 +1,39 @@
+{
+  "shop_management": {
+      "shop_1": {
+        "reports": {
+          "sales": {
+            "2025-02-07": {
+              "total_sales": 25000.0,
+              "total_orders": 40,
+              "top_selling_item": "Milk 1L",
+              "payment_methods": {
+                "cash": 15000.0,
+                "google_pay": 10000.0
+              }
+            }
+          },
+          "expenses": {
+            "2025-02": {
+              "total_expenses": 18000.0,
+              "top_expense_category": "Salaries"
+            }
+          },
+          "inventory": {
+            "low_stock_items": ["Sugar", "Soap"]
+          },
+          "employees": {
+            "best_performer": "Rahul Sharma",
+            "most_absent": "Anjali Verma"
+          },
+          "financial_summary": {
+            "2025-02": {
+              "total_revenue": 25000.0,
+              "total_expenses": 18000.0,
+              "net_profit": 7000.0
+            }
+          }
+        }
+      }
+  }
+}

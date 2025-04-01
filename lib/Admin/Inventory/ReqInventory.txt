@@ -1,0 +1,83 @@
+🔹 1. inventory_home.dart (Inventory Dashboard)
+🔹 Features:
+✅ Displays total number of products
+✅ Shows low-stock alerts (products below a threshold)
+✅ Add Product button
+✅ Search Products feature
+✅ Firebase real-time sync to fetch product details
+
+🔹 UI Components:
+List of Products: Name, price, stock count.
+Floating Action Button (FAB): To add a new product.
+Stock Alert Card: Shows products low in stock.
+
+
+🔹 2. add_product.dart (Add New Product)
+🔹 Features:
+✅ Input fields for:
+
+Product Name
+Category (Dropdown)
+Price
+Stock Quantity
+Expiry Date (for medical)
+Size (for clothing)
+Barcode (Auto-fill using Scanner)
+✅ Save to Firebase on submit.
+✅ Validate fields before saving.
+🔹 Firebase Action:
+Adds a new product entry in /Shop_Management/Shop_1/Inventory/
+Generates a unique Product_ID
+Stores product details.
+
+
+🔹 3. edit_product.dart (Edit Product Details)
+🔹 Features:
+✅ Allows editing product details fetched from Firebase.
+✅ Auto-fills product info based on selected product.
+✅ Updates Firebase in real-time.
+✅ Delete Product option.
+
+🔹 Firebase Action:
+Fetches product data using Product_ID.
+Updates product details in /shop_management/shop_1/Inventory/.
+🔹 4. product_list.dart (View/Search Products)
+🔹 Features:
+✅ Displays all products in list format.
+✅ Search bar to filter products by name/category.
+✅ Sort products by price, stock level.
+✅ Clicking on a product opens edit_product.dart.
+
+🔹 Firebase Action:
+Fetches real-time product list.
+Listens for changes in inventory data.
+🔹 5. stock_tracking.dart (Monitor Stock Levels)
+🔹 Features:
+✅ Low-stock warnings (highlight products with stock < 5).
+✅ Filter: View only out-of-stock products.
+✅ Restock Button: Redirects to edit_product.dart.
+
+🔹 Firebase Action:
+Fetches stock details from Firebase.
+Highlights products below threshold.
+🔹 6. barcode_scanner.dart (Barcode Scanner)
+🔹 Features:
+✅ Uses device camera to scan barcode.
+✅ Fetches product details if barcode exists in Firebase.
+✅ Auto-fills details in add_product.dart.
+✅ Adds new barcode if product is new.
+
+🔹 Firebase Action:
+Searches /shop_management/shop_1/Inventory/ for barcode match.
+Auto-fills product details if found.
+If not found, allows adding a new product.
+
+
+✅ Summary
+🔹 Key Features in Inventory Module:
+Inventory Dashboard – Shows total products & stock alerts.
+Add Product – Saves new product in Firebase.
+Edit Product – Updates existing product details.
+Product List – View, search, and sort products.
+Stock Tracking – Monitors low-stock & out-of-stock items.
+Barcode Scanner – Scans barcodes to add/fetch products.

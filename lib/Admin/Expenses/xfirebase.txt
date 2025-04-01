@@ -1,0 +1,39 @@
+{
+  "shop_management": {
+    "shops": {
+      "shop_1": {
+        "expenses": {
+          "categories": {
+            "rent": "Rent",
+            "salaries": "Salaries",
+            "stock": "Stock Purchase",
+            "utilities": "Electricity & Water",
+            "miscellaneous": "Other Expenses"
+          },
+          "records": {
+            "Expense_001": {
+              "date": "2025-02-07",
+              "amount": 5000.0,
+              "category": "rent",
+              "description": "Shop Rent for February",
+              "payment_method": "Bank Transfer"
+            },
+            "Expense_002": {
+              "date": "2025-02-07",
+              "amount": 12000.0,
+              "category": "salaries",
+              "description": "Employee Salaries",
+              "payment_method": "Cash"
+            }
+          },
+          "summary": {
+            "2025-02": {
+              "total_expenses": 17000.0,
+              "top_category": "salaries"
+            }
+          }
+        }
+      }
+    }
+  }
+}
