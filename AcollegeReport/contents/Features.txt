@@ -1,0 +1,48 @@
+# Features
+
+## Core Features
+
+1. **Real-Time Data Synchronization**
+   - Firebase Realtime Database integration for instant updates across devices
+   - Multi-device support for seamless operation
+
+2. **Inventory Management**
+   - Product catalog with detailed information
+   - Stock tracking and low stock alerts
+   - Barcode scanning for quick product identification
+   - Bulk product import/export
+
+3. **Billing and Sales**
+   - Point-of-sale functionality
+   - Receipt generation
+   - Multiple payment method support
+   - Discount management
+
+4. **Employee Management**
+   - Staff profiles and role-based access
+   - Attendance tracking
+   - Salary management and calculation
+   - Performance tracking
+
+5. **Reporting and Analytics**
+   - Sales reports (daily, weekly, monthly)
+   - Inventory turnover analysis
+   - Employee performance metrics
+   - Financial summaries
+
+6. **Customer Management**
+   - Customer database
+   - Purchase history tracking
+   - Loyalty program support
+
+7. **Expense Tracking**
+   - Record and categorize business expenses
+   - Budget planning and monitoring
+
+8. **Multi-Platform Support**
+   - Works on Android and iOS devices
+   - Responsive design for various screen sizes
+
+9. **Offline Capability**
+   - Basic functionality available without internet
+   - Data synchronization when connection is restored 

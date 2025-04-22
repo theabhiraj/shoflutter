@@ -1,0 +1,11 @@
+# Project Overview
+
+xShop Management System is a comprehensive Flutter-based application designed to streamline and automate shop management operations. The system provides a unified platform for store owners and managers to handle various aspects of their business, including inventory management, billing, employee management, and reporting.
+
+The application is built with a focus on usability, efficiency, and real-time data synchronization using Firebase as the backend. It is designed to cater to retail businesses of various sizes, providing tools to automate routine tasks, track inventory, manage employees, and generate comprehensive reports.
+
+The system consists of two main components:
+1. Admin Panel - For store owners and managers to handle all aspects of the business
+2. Employee Application - For staff to handle day-to-day operations like sales, inventory checks, and attendance
+
+The cloud-based architecture ensures that data is synchronized across all devices in real-time, providing up-to-date information for better decision-making and operational efficiency. 

@@ -1,0 +1,50 @@
+# Employee App Features
+
+The Employee App component of xShop Management System is designed for store staff to efficiently handle day-to-day operations. It offers a simplified interface with focused functionality:
+
+1. **Authentication and Profile**
+   - Secure login with role-based access
+   - Personal profile management
+   - View work schedule and assignments
+
+2. **Attendance Management**
+   - Clock in/out functionality
+   - View attendance history
+   - Request leave or time off
+
+3. **Sales Processing**
+   - Point-of-sale functionality
+   - Barcode scanning for product lookup
+   - Process customer transactions
+   - Apply discounts (with permission)
+   - Generate and print receipts
+
+4. **Inventory Handling**
+   - Check product availability
+   - Scan products for quick information
+   - Log stock issues or discrepancies
+   - Receive new inventory shipments
+   - Perform inventory counts
+
+5. **Customer Service**
+   - Access customer information
+   - Record customer feedback
+   - Process returns and exchanges
+   - Register new customers
+
+6. **Task Management**
+   - View assigned tasks
+   - Update task status
+   - Communicate with team members
+
+7. **Salary and Performance**
+   - View salary information
+   - Check sales performance
+   - Track commission earnings
+   - View manager feedback
+
+8. **Notifications**
+   - Receive alerts for low stock
+   - Get updates on promotions
+   - See important announcements
+   - Task reminders 

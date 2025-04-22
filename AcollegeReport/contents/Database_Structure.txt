@@ -1,0 +1,123 @@
+# Database Structure
+
+The xShop Management System uses Firebase Realtime Database with a carefully designed structure to optimize data access patterns, security, and scalability:
+
+## Root Level Organization
+
+```
+{
+  "shop_management": {
+    "shop_1": {
+      // Shop-specific data
+    },
+    "shop_2": {
+      // Shop-specific data for multi-store scenarios
+    }
+  }
+}
+```
+
+## Shop Level Data Structure
+
+Each shop's data is organized into logical sections:
+
+```
+"shop_1": {
+  "inventory": {
+    // Product data
+  },
+  "employees": {
+    // Employee data
+  },
+  "customers": {
+    // Customer data
+  },
+  "transactions": {
+    // Sales transactions
+  },
+  "expenses": {
+    // Business expenses
+  },
+  "settings": {
+    // Shop configurations
+  }
+}
+```
+
+## Inventory Data Model
+
+```
+"inventory": {
+  "Product_ID_123": {
+    "name": "Paracetamol",
+    "category": "Medicine",
+    "price": 25.0,
+    "stock": 100,
+    "expiry_date": "2025-12-31",
+    "barcode": "8901234567890",
+    "last_updated": "2025-02-07T12:00:00"
+  }
+}
+```
+
+## Employee Data Model
+
+```
+"employees": {
+  "EMP_001": {
+    "name": "John Doe",
+    "role": "Sales Associate",
+    "contact": "john@example.com",
+    "joining_date": "2022-01-15",
+    "salary": 25000,
+    "attendance": {
+      "2023-02-01": {
+        "clock_in": "09:00:00",
+        "clock_out": "18:00:00",
+        "status": "present"
+      }
+    }
+  }
+}
+```
+
+## Transaction Data Model
+
+```
+"transactions": {
+  "TRX_001": {
+    "date": "2023-02-07T14:30:00",
+    "customer_id": "CUST_123",
+    "employee_id": "EMP_001",
+    "items": [
+      {
+        "product_id": "Product_ID_123",
+        "quantity": 2,
+        "price": 25.0
+      }
+    ],
+    "payment_method": "cash",
+    "total_amount": 50.0,
+    "discount": 0,
+    "tax": 5.0,
+    "final_amount": 55.0
+  }
+}
+```
+
+## Security Rules
+
+The database implements rules for:
+- Authentication-based access
+- Role-based permissions
+- Data validation
+- Prevention of unauthorized access
+- Write protection for sensitive data
+
+## Indexing Strategy
+
+Critical paths are indexed for performance:
+- Products by barcode
+- Transactions by date
+- Employees by role
+- Inventory by stock levels 
